@@ -8,7 +8,7 @@ ENV LANG C.UTF-8
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 EXPOSE 3000/tcp
 
-RUN apk update && apk add --no-cache \
+RUN apk add --no-cache \
     nodejs \
     npm \
     ffmpeg \
