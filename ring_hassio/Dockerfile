@@ -5,7 +5,7 @@ FROM alpine:3.13
 ENV LANG C.UTF-8
 
 # Set shell
-SHELL ["/bin/sh", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 EXPOSE 3000/tcp
 
 RUN apk add --no-cache \
