@@ -5,7 +5,7 @@ FROM alpine:3.13
 ENV LANG C.UTF-8
 
 # Set shell
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/sh", "-o", "pipefail", "-c"]
 EXPOSE 3000/tcp
 
 RUN apk add --no-cache \
@@ -19,4 +19,4 @@ RUN apk add --no-cache \
     npm install --unsafe-perm && \
     chmod a+x run.sh
 
-CMD [ "/ring-hassio/ring_hassio/run.sh" ]
+CMD [ "./ring-hassio/ring_hassio/run.sh" ]
