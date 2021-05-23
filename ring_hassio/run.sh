@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 CONFIG_PATH=/data/options.json
 export RING_REFRESH_TOKEN="$(jq --raw-output '.ring_refresh_token' $CONFIG_PATH)"
 export CAMERA_NAME="$(jq --raw-output '.camera_name' $CONFIG_PATH)"
