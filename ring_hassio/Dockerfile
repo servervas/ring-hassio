@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM alpine:3.13
+FROM alpine
 
 # Add env
 ENV LANG C.UTF-8
