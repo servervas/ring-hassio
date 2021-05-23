@@ -9,6 +9,7 @@ SHELL ["/bin/sh", "-o", "pipefail", "-c"]
 EXPOSE 3000/tcp
 
 RUN apk add --no-cache \
+    jq \
     bash \
     nodejs \
     npm \
